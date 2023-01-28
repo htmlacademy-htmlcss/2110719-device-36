@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Илья Пинясов](https://up.htmlacademy.ru/htmlcss/36/user/2110719).
-* Наставник: `Неизвестно`.
+- Студент: [Илья Пинясов](https://up.htmlacademy.ru/htmlcss/36/user/2110719).
+- Наставник: `Дмитрий Дроганов`(https://htmlacademy.ru/profile/dmdragon).
 
 ---
 
