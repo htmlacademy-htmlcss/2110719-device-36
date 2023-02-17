@@ -10,10 +10,18 @@
     <header class="main-header">
       <nav class="navigation">
         <a href="#" class="header-logo">
-          <img class="logo-site" src="#" alt="Device" />
+          <img
+            class="logo-site"
+            src="./img/logo-device.svg"
+            alt="Лого девайс"
+          />
         </a>
         <div class="main-navigation">
-          <form action="#" class="search-form" method="get">
+          <form
+            action="https://echo.htmlacademy.ru"
+            class="search-form"
+            method="get"
+          >
             <label for="search-input"> </label>
             <input
               class="search-form-input"
@@ -26,41 +34,52 @@
           </form>
           <ul class="user-item">
             <li>
-              <a href="#">Войти</a>
+              <a href="#"><img src="" alt="Войти" /></a>
             </li>
             <li>
-              <a href="#">Сравнить</a>
+              <a href="#"><img src="" alt="Сравнить" /></a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a href="#"><img src="" alt="Корзина" /></a>
             </li>
           </ul>
         </div>
         <ul class="site-navigation">
           <li class="catalog-navigation">
             <a href="#">Каталог товаров</a>
+            <ul class="site-navigation-submenu">
+              <li class="navigation-submenu">
+                <a class="navigation-submenu-link" href="#">
+                  <p>Виртуальная реальность</p>
+                </a>
+              </li>
+              <li class="navigation-submenu">
+                <a class="navigation-submenu-link" href="#">
+                  <p>Моноподы для селфи</p>
+                </a>
+              </li>
+              <li class="navigation-submenu">
+                <a class="navigation-submenu-link" href="#"
+                  ><img src="" alt="Экшн-камеры" />
+                  <p>Экшн-камеры</p>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="navigation-submenu">
+                <a class="navigation-submenu-link" href="#"
+                  ><img src="" alt="Фитнес-браслеты" />
+                  <p>Фитнес-браслеты</p>
+                </a>
+              </li>
+              <li class="navigation-submenu">
+                <a class="navigation-submenu-link" href="#"
+                  ><img src="" alt="Умные часы" />
+                  <p>Умные часы</p>
+                </a>
+              </li>
+            </ul>
           </li>
-          <ul class="site-navigation-submenu">
-            <li class="navigation-submenu">
-              <a class="navigation-submenu-link" href="#"
-                >Виртуальная реальность</a
-              >
-            </li>
-            <li class="navigation-submenu">
-              <a class="navigation-submenu-link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="navigation-submenu">
-              <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul>
-            <li class="navigation-submenu">
-              <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-submenu">
-              <a class="navigation-submenu-link" href="#">Умные часы</a>
-            </li>
-          </ul>
           <ul>
             <li class="navigation-submenu">
               <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
@@ -86,7 +105,7 @@
             <div class="slider-image-wrapper">
               <img
                 class="promo-slider-image slider-image-3"
-                src="#"
+                src="./img/slider-copter.png"
                 alt="Квадрокоптер белого цвета оснащённый лазером"
               />
             </div>
@@ -176,7 +195,38 @@
           </li>
         </ul>
       </section>
-      <div class="services-inner">
+      <section class="gadjets container">
+        <h2 class="visually-hidden">Гаджеты</h2>
+        <ul class="menu-gadjets">
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets" href="#"
+              >Виртуальная реальность</a
+            >
+          </li>
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets monopods" href="#"
+              >Моноподы для селфи</a
+            >
+          </li>
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets action" href="#">Экшн-камеры</a>
+          </li>
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets fitness" href="#"
+              >Фитнес-браслеты</a
+            >
+          </li>
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets smart" href="#">Умные часы</a>
+          </li>
+          <li class="navigation-item-gadjets">
+            <a class="navigation-link-gadjets quadrocopters" href="#"
+              >Квадрокоптеры</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="services-inner">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-slider">
           <li class="item-delivery">
@@ -224,16 +274,14 @@
             </button>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="delivery">
-        <button class="button-delivery" type="submit">
+        <button class="button-delivery" type="button">
           <img src="#" alt="Грузовая машина" />
           <p>ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</p>
           <img src="#" alt="Восклицательный знак" />
         </button>
       </div>
-    </main>
-    <div class="container-index-content">
       <section>
         <h2 class="title-content">О нас</h2>
         <p class="content-index">
@@ -257,18 +305,20 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
-        <h1 class="main-title title">Интернет-магазин «Девайс»</h1>
+        <p class="main-text">Интернет-магазин «Девайс»</p>
         <address>
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
         <a class="number-link" href="78128121212">+7 (812) 812-12-12</a>
-        <h1 class="main-title title">Время работы</h1>
+        <p class="main-text">Время работы</p>
         <p class="content-index">
           пн—пт: с 10:00 до 22:00 <br />
           сб—вс: с 10:00 до 19:00
         </p>
         <a class="about-us-link link" href="#">Напишите нам</a>
       </section>
+    </main>
+    <footer>
       <section class="appointment">
         <h2 class="apppointment-title">Подпишитесьна рассылку</h2>
         <p class="appointment-text">
@@ -288,8 +338,6 @@
           <p class="appointment-text">Это бесплатно</p>
         </form>
       </section>
-    </div>
-    <footer>
       <div class="main-footer">
         <img class="logo-footer" src="#" alt="Device" />
         <p class="text-footer">
@@ -304,12 +352,26 @@
         <img src="#" alt="Плашка" class="button-footer" />
         <ul class="social item">
           <li>
-            <a href="#" class="footer-social-item">Telegram</a>
+            <a href="https://t.me/htmlacademy" class="footer-social-item"
+              ><img src="#" alt="Перейтив в Telegram Академии"
+            /></a>
           </li>
-          <li><a href="#" class="footer-social-item">Youtube</a></li>
-          <li><a href="#" class="footer-social-item">Twitter</a></li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/htmlacademyru"
+              class="footer-social-item"
+              ><img src="№" alt="Перейтив на Youtube канал Академии"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/htmlacademy_ru"
+              class="footer-social-item"
+              ><img src="#" alt="Перейтив в Twitter Академии"
+            /></a>
+          </li>
         </ul>
-        <a href="#" class="footer-link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/" class="footer-link">HTML Academy</a>
       </div>
     </footer>
   </body>
