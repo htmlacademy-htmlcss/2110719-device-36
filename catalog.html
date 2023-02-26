@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог товаров</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header class="main-header">
@@ -23,7 +24,7 @@
             class="search-form"
             method="get"
           >
-            <label for="search-input">Поиск по сайту</label>
+            <label for="visually-hidden"></label>
             <input
               class="search-form-input"
               type="search"
@@ -31,95 +32,120 @@
               id="search-input"
               placeholder="Поиск по сайту"
             />
-            <button class="search-form-button" type="submit">Найти</button>
+            <button class="search-form-button button" type="submit">
+              Найти
+            </button>
           </form>
           <ul class="user-item">
             <li>
-              <a href="#"
+              <a href="#" class="navigation-link"
                 ><img
                   src="./images/icon-user.svg"
                   alt="Войти"
                   width="15"
                   height="12"
-              /></a>
+                />Войти</a
+              >
             </li>
             <li>
-              <a href="#"
+              <a href="#" class="navigation-link"
                 ><img
                   src="./images/icon-compare.svg"
                   alt="Сравнить"
                   width="10"
                   height="12"
-              /></a>
+                />Сравнить</a
+              >
             </li>
             <li>
-              <a href="#"
+              <a href="#" class="navigation-link"
                 ><img
                   src="./images/icon-basket.svg"
                   alt="Корзина"
                   width="13"
                   height="21"
-              /></a>
+                />Корзина</a
+              >
             </li>
           </ul>
         </div>
         <ul class="site-navigation">
           <li class="catalog-navigation">
-            <a href="./catalog.html">Каталог товаров</a>
+            <a
+              class="site-navigation-link navigation-link"
+              href="./catalog.html"
+              >Каталог товаров</a
+            >
             <ul class="site-navigation-submenu">
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#"
+                <a class="navigation-submenu-link navigation-link" href="#"
                   >Виртуальная реальность</a
                 >
               </li>
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#"
+                <a class="navigation-submenu-link navigation-link" href="#"
                   >Моноподы для селфи</a
                 >
               </li>
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
+                <a class="navigation-submenu-link navigation-link" href="#"
+                  >Экшн-камеры</a
+                >
               </li>
             </ul>
             <ul>
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
+                <a class="navigation-submenu-link navigation-link" href="#"
+                  >Фитнес-браслеты</a
+                >
               </li>
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#">Умные часы</a>
+                <a class="navigation-submenu-link navigation-link" href="#"
+                  >Умные часы</a
+                >
               </li>
             </ul>
             <ul>
               <li class="navigation-submenu">
-                <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
+                <a class="navigation-submenu-link navigation-link" href="#"
+                  >Квадрокоптеры</a
+                >
               </li>
             </ul>
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Доставка</a>
+            <a class="site-navigation-link navigation-link" href="#"
+              >Доставка</a
+            >
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Гарантия</a>
+            <a class="site-navigation-link navigation-link" href="#"
+              >Гарантия</a
+            >
           </li>
           <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Контакты</a>
+            <a class="site-navigation-link navigation-link" href="#"
+              >Контакты</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-title-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+      <div class="container">
+        <h1 class="navigation-link inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a href="" class="breadcrumbs-link">Главная</a>
+            <a class=" breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a href="" class="breadcrumbs-link">Каталог товаров</a>
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
+        </ul>
+      </div>
         </ul>
         <section class="filters">
           <div class="filters-title-wrapper">
@@ -214,7 +240,6 @@
             </form>
           </div>
         </section>
-      </header>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <section class="sorting">
@@ -222,13 +247,15 @@
             <h2 class="sorting-title">Сортировка:</h2>
             <ul class="sorting-list">
               <li class="sorting-list-item">
-                <a class="sorting-link sorting-link-current">По цене</a>
+                <a class="sorting-link sorting-link-current" href="#"
+                  >По цене</a
+                >
               </li>
               <li class="sorting-list-item">
-                <a class="sorting-link" href="blank.html">По типу</a>
+                <a class="sorting-link" href="#">По типу</a>
               </li>
               <li class="sorting-list-item">
-                <a class="sorting-link" href="blank.html">По популярности</a>
+                <a class="sorting-link" href="#">По популярности</a>
               </li>
             </ul>
             <ul class="direction-list">
@@ -376,7 +403,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <img
         class="logo-footer"
         src="./images/logo-title-footer.svg"
@@ -388,11 +415,13 @@
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </p>
       <ul class="item-button">
-        <li class="item">Доставка</li>
-        <li class="item">Гарантия</li>
-        <li class="item">Контакты</li>
+        <li class="footer-item">Доставка</li>
+        <li class="footer-item">Гарантия</li>
+        <li class="footer-item">Контакты</li>
       </ul>
-      <a class="number-link" href="78128121212">+7 (812) 812-12-12</a>
+      <a class="number-link navigation-link" href="78128121212"
+        >+7 (812) 812-12-12</a
+      >
       <img
         src="./images/frame-yellow.svg"
         alt="Плашка"
@@ -402,7 +431,10 @@
       />
       <ul class="social item">
         <li>
-          <a href="https://t.me/htmlacademy" class="footer-social-item"
+          <a
+            class="navigation-link"
+            href="https://t.me/htmlacademy"
+            class="footer-social-item"
             ><img
               src="./images/icon-telegram.svg"
               alt="Перейтив в Telegram Академии"
@@ -413,7 +445,7 @@
         <li>
           <a
             href="https://www.youtube.com/user/htmlacademyru"
-            class="footer-social-item"
+            class="footer-social-item navigation-link"
             ><img
               src="./images/icon-youtube.svg"
               alt="Перейтив на Youtube канал Академии"
@@ -424,7 +456,7 @@
         <li>
           <a
             href="https://twitter.com/htmlacademy_ru"
-            class="footer-social-item"
+            class="footer-social-item navigation-link"
             ><img
               src="./images/icon-twitter.svg"
               alt="Перейтив в Twitter Академии"
@@ -433,7 +465,7 @@
           /></a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/" class="footer-link">
+      <a href="https://htmlacademy.ru/" class="footer-link navigation-link">
         <img
           src="./images/logo-html-academy.svg"
           alt="HTML Academy"
